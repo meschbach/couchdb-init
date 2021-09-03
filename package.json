@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/meschbach/couchdb-init#readme",
   "dependencies": {
-    "junk-bucket": "^1.5.0",
-    "nano": "^8.2.2"
+    "junk-bucket": "^1.6",
+    "nano": "^9.0"
   }
 }
