@@ -8,7 +8,7 @@ main(async (logger) => {
 	const host = process.env["COUCH_HOST"] || "localhost";
 	const additionalDatabases = (process.env["DBS"] || "").split(",");
 
-	logger.info("Initializing Couch cluster");
+	logger.info("Initializing Couch cluster", {host, user});
 
 	const cluster = new Service("http://"+user+":"+secret+"@"+host+":5984");
 	const initialState = await cluster.client.relax({
